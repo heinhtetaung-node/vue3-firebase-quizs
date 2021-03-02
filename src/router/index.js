@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import Questions from "./../views/questions.vue";
 import Answers from "./../views/answers.vue";
 import Test from "./../views/Test.vue";
+import QuestionSetup from "./../views/QuestionSetup.vue";
 
 const routes = [
   {
@@ -19,6 +20,16 @@ const routes = [
     name: "test",
     component: Test,
   },
+  {
+    path: "/question-setup",
+    name: "QuestionSetup",
+    component: QuestionSetup
+  },
+  {
+    path: "/question-setup/:topicId",
+    name: "QuestionSetupTopic",
+    component: QuestionSetup
+  }
 ];
 
 const router = createRouter({

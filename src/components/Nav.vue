@@ -3,21 +3,30 @@
     <div class="container mx-auto">
       <div class="flex items-center">
         <router-link to="/questions"
-                     class="inline-block cursor-pointer px-16 py-4 transition-colors hover:bg-gray-500 duration-300">Questions Setup</router-link>
+                     id="ques" class="inline-block cursor-pointer px-16 py-4 transition-colors hover:bg-gray-500 duration-300">Questions Setup</router-link>
         <router-link to="/answers"
-                     class="inline-block cursor-pointer px-16 py-4 transition-colors hover:bg-gray-500 duration-300">Answers</router-link>
+                     id="answ" class="inline-block cursor-pointer px-16 py-4 transition-colors hover:bg-gray-500 duration-300">Answers</router-link>
       </div>
     </div>
   </nav>
-
 </template>
 
-<script setup>
-// import { defineProps, reactive } from 'vue'
-
-// defineProps({
-//   msg: String
-// })
-
-// const state = reactive({ count: 0 })
+<script>
+import { defineComponent, onMounted } from "vue";
+import { useRoute } from 'vue-router'
+        
+export default defineComponent({
+    setup(){
+      const route = useRoute()
+      onMounted(() => {
+        // find javascript code for get current route
+        // change addclass on click nav
+        // if(route.path == '/questions' || route.path == '/question-setup'){
+        //   document.getElementById('ques').classList.add('active-nav')
+        // }else{
+        //   document.getElementById('answ').classList.add('active-nav')
+        // }
+      })
+    }
+});
 </script>
