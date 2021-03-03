@@ -1,5 +1,5 @@
 <template>
-  <Nav v-if="$route.name != 'test' && $route.name != 'testDetail'" :currentPage="$route.name" />
+  <Nav v-if="$route.name != 'test' && $route.name != 'testDetail' && $route.name" :currentPage="$route.name" />
   <router-view />
 </template>
 
