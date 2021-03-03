@@ -3,6 +3,8 @@ import Questions from "./../views/questions.vue";
 import Answers from "./../views/answers.vue";
 import Test from "./../views/Test.vue";
 import QuestionSetup from "./../views/QuestionSetup.vue";
+import TestDetail from "./../views/TestDetail.vue";
+import AnswerDetail from "./../views/AnswerDetail.vue";
 
 const routes = [
   {
@@ -29,6 +31,16 @@ const routes = [
     path: "/question-setup/:topicId",
     name: "QuestionSetupTopic",
     component: QuestionSetup
+  },
+  {
+    path: "/test/:topicId",
+    name: "testDetail",
+    component: TestDetail
+  },
+  {
+    path: "/answer/:candId",
+    name: "AnswerDetail",
+    component: AnswerDetail
   }
 ];
 

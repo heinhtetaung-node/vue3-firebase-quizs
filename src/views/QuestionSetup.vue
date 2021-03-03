@@ -37,10 +37,10 @@
       <br>
       <br>      
       <button class="bg-green-600 p-2 rounded text-lg text-gray-100 mr-2" @click="saveSetting">Save Setting</button>
-      <button class="bg-red-600 p-2 rounded text-lg text-gray-100">Discard</button>
+      <router-link to='/questions'><button class="bg-red-600 p-2 rounded text-lg text-gray-100">Back</button></router-link>
       <br>
       <br>
-      <button class="bg-green-600 p-2 rounded text-lg text-gray-100 mr-2">Publish</button>
+      <!-- <button class="bg-green-600 p-2 rounded text-lg text-gray-100 mr-2">Publish</button> -->
     </div>
 </template>
 <script>
